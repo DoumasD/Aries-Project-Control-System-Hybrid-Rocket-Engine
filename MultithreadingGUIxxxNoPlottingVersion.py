@@ -58,10 +58,10 @@ def connect():
     global serial_object
     port = port_entry.get()
     print(port)
-    buad = buad_rate.get()
-    print(buad)
+    baud = baud_rate.get()
+    print(baud)
     try:
-        serial_object=serial.Serial('COM' + str(port), buad,timeout=0)
+        serial_object=serial.Serial('COM' + str(port), baud,timeout=0)
        
     except ValueError:
         print("Enter Baud and Port")
@@ -497,11 +497,11 @@ if __name__ == "__main__":
    
     
 
-    # This is the background image 
+    #This is how to attach a background image. Its commented out on purpose.
     #photo=ImageTk.PhotoImage(file="C:\\Users\Demetrios\Desktop\Beautiful-Wallpaper.jpg")
-    photo=ImageTk.PhotoImage(file="C:\\Users\Demetrios\Desktop\windowsimage.jpg")
-    label = Label(root,image = photo)
-    label.pack()
+    #photo=ImageTk.PhotoImage(file="C:\\Users\Demetrios\Desktop\windowsimage.jpg")
+    #label = Label(root,image = photo)
+    #label.pack()
     root.resizable(False, False)
 
     frame_2 = Frame(height = 500, width = 1600, bd = 3, relief = 'groove').place(x = 0, y = 300)
@@ -618,8 +618,8 @@ if __name__ == "__main__":
     data_entry=Entry(width=7)
     data_entry.place(x=1200,y=500)
 
-    buad_rate=Entry(width=7)
-    buad_rate.place(x=1200,y=420)
+    baud_rate=Entry(width=7)
+    baud_rate.place(x=1200,y=420)
 
     port_entry=Entry(width=7)
     port_entry.place(x=1200,y=460)
