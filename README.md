@@ -8,7 +8,7 @@ Info:  Design a control system for a hybrid rocket engine.
        The engine is written in C/C++ Arduino code.
 
 
-Purpose: Read a telemetry string from the engine that indicates its health. Also send commands to fill two tanks, launch, and perform an abort sequence. The engine itself also has some autonomous actions that automatically abort during any emergencies that can happen during the filling and launch procedures. The data is plotted and saved in real time. The communication connection between the GUI and the engine is wireless. The xBee radio module 3B series were used. The microcontroller used for the engine is an Arduino Mega 2560 Rev 3. 
+Purpose: Read a telemetry string from the engine that indicates its health. Also send commands to fill two tanks, launch, and perform an abort sequence. The engine itself also has some autonomous actions that automatically abort during any emergencies that can happen during the filling and launch procedures. The data is plotted and saved in real time. The communication connection between the GUI and the engine is wireless. The xBee radio module 3B 900 MHz series were used. The microcontroller used for the engine is an Arduino Mega 2560 Rev 3. 
 
 Instructions:
 	1.) Upload the Arduino code to the Arduino Mega 2560 rev 3. 
@@ -23,3 +23,8 @@ Instructions:
 Warnings:
 
 Close the serial connection before exiting the application by pressing the disconnect button.
+
+A video demonstration can be found in this link below:
+https://www.youtube.com/watch?v=jyF8A0nIojg&feature=youtu.be
+
+
