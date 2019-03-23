@@ -5,17 +5,17 @@
 
 import Tkinter
 import tkMessageBox
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from Tkinter import *
-from PIL import Image, ImageTk
+#from PIL import Image, ImageTk
 from threading import Thread
 import threading
 import time
 import os
 import serial
 import csv
-import numpy
-from drawnow import *
+#import numpy
+#from drawnow import *
 
 
 
@@ -36,7 +36,7 @@ x= 0   # Creating x as a global variable, used to control the infinte loop when 
 c=0
 
 
-plt.ion() # Tells MATLAB to plot live stream
+#plt.ion() # Tells MATLAB to plot live stream
 
 
 # Create a File in excel with Headers that describe the telemetry 
@@ -498,8 +498,7 @@ if __name__ == "__main__":
     
 
     #This is how to attach a background image. Its commented out on purpose.
-    #photo=ImageTk.PhotoImage(file="C:\\Users\Demetrios\Desktop\Beautiful-Wallpaper.jpg")
-    #photo=ImageTk.PhotoImage(file="C:\\Users\Demetrios\Desktop\windowsimage.jpg")
+    #photo=ImageTk.PhotoImage(file="C:\\Users\Demetrios\Desktop\backgroundimage.jpg")
     #label = Label(root,image = photo)
     #label.pack()
     root.resizable(False, False)
